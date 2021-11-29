@@ -1,12 +1,10 @@
-// Chapter 08, exercise 14: functions to determine number of characters in each
-// element of a vector<string>, longest and shortest string, lexicographically
-// first and last string
+
  //*  UCF COP3330 Fall 2021 Assignment 5 Solution
  //*  Copyright 2021 Christopher Jean
 
 #include "C:\Users\cjean\Desktop\Cop3330\Cop3330 C++\std_lib_facilities.h"
 
-// print vector of integers
+
 void print(const vector<int>& v)
 {
     cout << "{ ";
@@ -15,7 +13,7 @@ void print(const vector<int>& v)
     cout << " }\n";
 }
 
-// print vector of strings
+
 void print(const vector<string>& v)
 {
     cout << "{ ";
@@ -24,7 +22,7 @@ void print(const vector<string>& v)
     cout << " }\n";
 }
 
-// returns vector with length of each string in argument
+
 
 
 vector<int> string_lengths(const vector<string>& v)
@@ -36,7 +34,7 @@ vector<int> string_lengths(const vector<string>& v)
     return lengths;
 }
 
-// returns longest string in a vector of strings
+
 string longest_string(const vector<string>& v)
 {
     if (v.size() == 0) error("longest_string: argument is empty vector");
@@ -51,7 +49,7 @@ string longest_string(const vector<string>& v)
     return ls;
 }
 
-// returns shortest string in a vector of strings
+
 string shortest_string(const vector<string>& v)
 {
     if (v.size() == 0) error("shortest_string: argument is empty vector");
@@ -66,7 +64,7 @@ string shortest_string(const vector<string>& v)
     return ss;
 }
 
-// returns lexicographically first string in a vector of strings
+
 string alpha_first_string(const vector<string>& v)
 {
     if (v.size() == 0) error("alpha_first_string: argument is empty vector");
@@ -75,7 +73,7 @@ string alpha_first_string(const vector<string>& v)
     return v_cp[0];
 }
 
-// returns lexicographically last string in a vector of strings
+
 string alpha_last_string(const vector<string>& v)
 {
     if (v.size() == 0) error("alpha_last_string: argument is empty vector");
